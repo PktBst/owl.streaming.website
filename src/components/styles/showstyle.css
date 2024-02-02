@@ -1,0 +1,138 @@
+*{
+    font-family: 'Inter',sans-serif;
+}
+
+.showinfo{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-size: cover;
+    display: flex;
+    font-size: small;
+}
+
+.showdetails{
+    position: relative;
+    text-align: left;
+    margin-top: auto;
+    max-width: 40%;
+    font-size: 1rem;
+    padding: 3%;
+}
+
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.overview{
+    font-size: inherit;
+    color: rgba(255, 255, 255, 0.684);
+    line-height: inherit;
+}
+
+.genre{
+    display: inline-block;
+    font-size: inherit;
+    color: rgb(125, 124, 124);
+    text-transform: lowercase;
+    border: rgb(125, 124, 124) solid 0.01px;
+    border-radius:6px;
+    padding: 1px 5px 1px 5px;
+    margin: 2px;
+    font-size: small;
+}
+
+.genre:hover{
+    color: white;
+    border: white solid 0.01px;
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,1);
+    transition: 0.2s ease-out;
+}
+
+.subinfo{
+    display: inline-flex;
+    font-size: medium;
+    margin: 2px;
+    list-style: disc;
+}
+
+.date {
+    width: 4ch;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style: disc;
+    margin: 0 0.5rem 0 0;
+    /* display: inline-block; */
+  }
+
+  .duration{
+    /* display: inline-block; */
+    list-style: disc;
+  }
+  
+
+
+.show-cast{
+    height: 80vh;
+    display: flex;
+}
+
+iframe{
+    width: 80vw;
+    height: 82vh;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .showinfo{
+        /* height: 10rem;
+        max-height: 10rem; */
+        overflow: auto;
+        font-size: xx-small;
+    }
+    .showdetails{
+        max-width: 55%;
+    }
+
+  }
+
+  @media only screen and (max-width: 420px) {
+    .show-cast{
+        display: block;
+    }
+    iframe{
+        width: 100%;
+        height: 25vh;
+    }
+    .showinfo{
+        height: 15rem;
+        max-height: 100%;
+        overflow: auto;
+        font-size: large;
+    }
+    .show-cast{
+        height: auto;
+    }
+    .casts{
+        height: 10rem !important;
+    }
+    .showdetails{
+        max-width: 100%;
+        font-size: 0.8rem;
+    }
+    
+    .genre{
+        font-size: xx-small;
+    }
+    .subinfo{
+        font-size: x-small;
+    }
+    .title{
+        font-size: large;
+    }
+
+  }

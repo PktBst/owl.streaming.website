@@ -1,0 +1,24 @@
+.intro{
+    display:flex;
+    font-size: medium;
+    padding: 4rem;
+    height: 50vh;
+}
+.intro .name{
+    font-size: larger;
+}
+
+.biography{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    height: inherit;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 650px) {
+    .intro{
+        display: block;
+        height: auto;
+    }
+  }

@@ -1,0 +1,38 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+.owl-symbol{
+    filter: invert();
+    height: 2.5rem;
+    vertical-align:auto;
+}
+.symbol:hover{
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.258);
+    /* color: grey; */
+}
+.owl-symbol:hover{
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.668); 
+}
+.navbar{
+    background-color: #000000b2;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    backdrop-filter: blur(7px);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.137);
+  }
+.symbol{
+    vertical-align:text-bottom;
+}
+
+@media only screen and (max-width: 420px){
+    .owl-symbol{
+        height: 1rem;
+    }
+    .navbar{
+        font-size: 25px;
+        font-weight: 500;
+    }
+}

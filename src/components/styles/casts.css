@@ -1,0 +1,43 @@
+
+.casts{
+    width: auto;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    margin: 0.5rem;
+    overflow: auto;
+    height: inherit;
+}
+.casts::-webkit-scrollbar {
+    width: 0em;
+  }
+.casts a {
+    text-decoration: none;
+  }
+.nameinfo{
+    text-align: left;
+    padding:0.5rem;
+    color: aliceblue;
+}
+.character{
+    font-size:1rem;
+}
+.name{
+    font-size: 0.7rem;
+}
+.cast{
+    display: flex;
+    border-radius: 25px;
+}
+.cast:hover{
+    background-color: rgba(255, 255, 255, 0.134);
+    color: rgb(255, 255, 255);
+    transition: ease-out 0.3s;
+}
+
+.cast img {
+    width: 2.7rem;
+    height: 2.7rem;
+    object-fit: cover; 
+    border-radius: 50%;
+    padding: 0.2rem;
+}
