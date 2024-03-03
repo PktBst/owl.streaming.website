@@ -1,20 +1,13 @@
 import React from 'react';
-import useFetch from './useFetch';
-import ShowTile from './ShowTile';
+import Scroll from './HOC/scroll';
 
-export default function Similar(props) {
-  const id = props.id;
-  const media_type = props.media_type;
+export default function Similar({id,media_type}) {
 
-  const { results: shows } = useFetch(`https://api.themoviedb.org/3/${media_type}/${id}/similar?language=en-US&page=1`, "similarShows");
-
-  if (!shows) {
-    return <div>Loading...</div>;
-  }
+  const url = `https://api.themoviedb.org/3/${media_type}/${id}/similar?language=en-US`
 
   return (
     <div>
-     <ShowTile shows={shows} media_type={props.media_type}/>
+      <Scroll url={url} media_type={media_type}/>
     </div>
   );
 }
